@@ -245,7 +245,7 @@ GLSL의 몇몇 함수는 특정한 값에 대해 정의되지 않은 동작을 �
 </p>
 <p>
 이러한 경우를 주의해야 하는데 여러분의 셰이더가 다른 머신에서 다른 결과를 도출할 수 있기 때문입니다.
-<a href="https://www.khronos.org/registry/OpenGL/specs/es/3.0/GLSL_ES_Specification_3.00.pdf">명세의 섹션 8</a>에 모든 내장 함수와 그것들의 기능, 정의되지 않은 동작을 불러일으킬 수 있는지 여부가 나열되어 있습니다.
+<a href="https://www.khronos.org/registry/OpenGL/specs/es/3.0/GLSL_ES_Specification_3.00.pdf">GLSL 명세서 8장</a>에 모든 내장 함수와 그것들의 기능, 정의되지 않은 동작을 불러일으킬 수 있는지 여부가 나열되어 있습니다.
 </p>
 <p>아래는 정의되지 않은 동작들의 리스트입니다. <code>genType</code>은 <code>float</code>, <code>vec2</code>, <code>vec3</code>, 또는 <code>vec4</code>를 의미압니다.</p>
   <pre class="prettyprint"><code>genType asin (genType x)</code></pre><p>
@@ -312,7 +312,7 @@ min (max (x, minVal), maxVal)를 반환합니다.
 <pre class="prettyprint"><code>genType smoothstep (genType edge0, genType edge1, genType x)
 genType smoothstep (float edge0, float edge1, genType x)</code></pre><p>
 x <= edge0이면 0.0을, x >= edge1이면 1.0을 반환하고 edge0 < x < edge1이면 0과 1사이의 smooth Hermite interpolation 결과를 반환합니다.
-부드러운 값의 전환을 문턱값과 함께 사용하고 싶을 때 유용합니다.
+부드러운 값의 전환을 문턱값(threshold)과 함께 사용하고 싶을 때 유용합니다.
 이는 아래 코드와 같습니다:
 </p>
 <pre class="prettyprint">

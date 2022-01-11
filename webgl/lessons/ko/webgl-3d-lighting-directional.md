@@ -188,7 +188,7 @@ function setNormals(gl) {
 }
 ```
 
-그리고 설정을 해줍시다. 하는김에 정점 색생을 없애서 조명 효과를 좀 더 잘 보이도록 해줍시다.
+그리고 설정을 해줍시다. 하는김에 정점 색상을 없애서 조명 효과를 좀 더 잘 보이도록 해줍시다.
 
     // 정점 데이터들이 전달되어야 할 위치 찾기
     var positionLocation = gl.getAttribLocation(program, "a_position");
